@@ -1,0 +1,45 @@
+class Usuario {
+    constructor(email,senha){
+        this.email = email
+        this.senha = senha
+    }
+    isAdmin(){
+        this.email===this.admin
+        
+    }
+}
+
+class Admin extends Usuario{
+    constructor(){
+        super()
+        this.admin=true
+        
+    }
+}
+const User1 = new Usuario('akram@nada.com','1234')
+const Adm1 = new Admin('akram@nada.com','1234')
+
+console.log(User1.isAdmin())
+console.log(Adm1.isAdmin())
+// class Lista {
+//     constructor(){
+//         this.nome = []
+//     }
+//     adicionar(nome){
+//         this.nome.push(nome)
+//         console.log(this.nome)
+//     }
+// }
+
+// class TodoList extends Lista{
+//     constructor(){
+//         super()
+//         this.usuario='Drogas'
+//     }
+//     mostraUsuario(){
+//         console.log(this.usuario)
+//     }
+// }
+
+// const MinhaLista = new TodoList()
+//     MinhaLista.adicionar('Akram')
